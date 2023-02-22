@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/backup"
+        android:title="BackUp"/>
+
+    <item android:id="@+id/restore"
+        android:title="Restore"/>
+
+    <item android:id="@+id/Category"
+        android:title="Category"/>
+
+    <item android:id="@+id/Msgs"
+        android:title="Predefined Messages"/>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bansi.eventreminder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".activity.PredefinedMessageActivity"></activity>
+        <activity android:name=".activity.SendMessageActivity" />
+        <activity android:name=".activity.CategoryAddingActivity" />
+        <activity android:name=".activity.ForeGroundDialogActivity" />
+        <activity android:name=".activity.ValidationDialog" />
+        <activity android:name=".activity.EventDetailActivity" />
+        <activity android:name=".activity.NotificationView" />
+        <activity android:name=".activity.AddEventActivity" />
+        <activity android:name=".activity.EventsActivity" />
+
+
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".helper.MyNotificationPublisher"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartService" />
+
+        <service
+            android:name=".helper.NotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.swayam.eventreminder.helper.NotificationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/swayam_notification" />
+    </application>
+
+</manifest>

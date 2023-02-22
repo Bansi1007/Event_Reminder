@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "150611975850",
+    "project_id": "event-reminder-788cd",
+    "storage_bucket": "event-reminder-788cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150611975850:android:79d6cd6815950ed72a3ad3",
+        "android_client_info": {
+          "package_name": "com.swayam.eventreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150611975850-do08h94qoo0u20jehuq6c1ru6tu056un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYHrCXnvO7HaL4e-imdJ2fEe8Iz0CKKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150611975850-do08h94qoo0u20jehuq6c1ru6tu056un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

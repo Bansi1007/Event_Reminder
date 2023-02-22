@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Add_event!-->
+    <dimen name="textview_size">17sp</dimen>
+    <dimen name="edit_text_size">16sp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="pading_10">10dp</dimen>
+    <dimen name="margin_top_15">15dp</dimen>
+    <dimen name="add_event_btn_top">70dp</dimen>
+
+    <!--item_event!-->
+    <dimen name="item_event_cardview_height">80dp</dimen>
+    <dimen name="linear_color_line">4dp</dimen>
+    <dimen name="date_size">18sp</dimen>
+</resources>

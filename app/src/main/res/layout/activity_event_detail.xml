@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E6E6"
+    tools:context=".activity.EventDetailActivity">
+<include layout="@layout/header"
+    android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@id/header"
+        android:layout_height="350dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+     >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tveName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="@string/Event_Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Event Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edit_text_size" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvedes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/edit_text_size"
+                    android:gravity="left"
+                    android:text="@string/Description"
+                    android:layout_weight="0.7"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="event discription jhbkmnbkjnkbjhbmn,nbjjn gfhfhfhgfghfgh"
+                    android:layout_weight="1.3"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvedate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Event_Date"
+                android:textSize="@dimen/edit_text_size"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="event date"
+                    android:layout_weight="1.3"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tveday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Event_Day"
+                android:textSize="@dimen/edit_text_size"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="event day"
+                    android:textSize="@dimen/edit_text_size"
+                    android:layout_weight="1.3"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Event_Time"
+                android:textSize="@dimen/edit_text_size"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="event time"
+                    android:layout_weight="1.3"
+                    android:textSize="@dimen/edit_text_size"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="left"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+ </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

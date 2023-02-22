@@ -1,0 +1,20 @@
+<resources>
+
+    <!--Add Event !-->
+
+    <string name="app_name">Event Reminder</string>
+    <string name="Event_Name">Event Name</string>
+    <string name="Event_Description">Event Description</string>
+    <string name="Event_Date">Event Date</string>
+    <string name="Event_Time">Event Time</string>
+    <string name="Add_Event">Add Event</string>
+
+
+    <!--Event Detail!-->
+    <string name="Description">Description</string>
+    <string name="Event_Day">Event Day</string>
+
+    <!--foreGround Dialog!-->
+    <string name="view">View</string>
+    <string name="Cancel">Cancel</string>
+</resources>

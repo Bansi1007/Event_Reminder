@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/orange"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Event"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textview_size"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+    />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="30dp"
+        android:visibility="gone"
+        app:tint="@color/white"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+
+
+
+</RelativeLayout>

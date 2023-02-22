@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CategoryAddingActivity">
+    <include
+        layout="@layout/header"
+        android:id="@+id/header"/>
+
+    <ScrollView
+        android:id="@+id/scScrolview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="@dimen/margin_top_15"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_16"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Event Category"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_top_15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginBottom="@dimen/pading_10"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corner"
+                    android:padding="@dimen/pading_10"
+                    android:textColor="@color/black"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:textSize="@dimen/edit_text_size"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+             <!--   <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Select Event Category"
+              android:textColor="@color/black"
+              android:fontFamily="@font/poppins_regular"
+              android:layout_marginBottom="@dimen/pading_10"
+              android:layout_marginTop="15dp"
+              android:gravity="center_vertical"/>
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner"
+                android:padding="@dimen/pading_10"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/edit_text_size"
+                />-->
+             <!--   <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Message"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_top_15"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginBottom="@dimen/pading_10"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corner"
+                    android:padding="@dimen/pading_10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:inputType="textCapSentences"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edit_text_size" />-->
+
+                <TextView
+                    android:id="@+id/btnAddEvent"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pink_round"
+                    android:text="Add Category"
+                    android:textAlignment="center"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/add_event_btn_top"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
